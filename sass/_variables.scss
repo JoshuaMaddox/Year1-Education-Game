@@ -2,10 +2,16 @@
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url('fonts/Ubuntu/Ubuntu-Medium.ttf');
+  src: url('fonts/Ubuntu');
 }
 
-$ubuntu-medium: 'Ubuntu', sans-serif;
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/Open_Sans')
+}
+
+$ubuntu: 'Ubuntu', sans-serif;
+$open-sans: 'Open Sans', sans-serif; 
 
 /* Year 1 Game Colors */
 
@@ -16,9 +22,12 @@ $gray: #333;
 $nav-color: $orange;
 $number-color: #fff;
 $number-box-color: $blue;
+$footer-color: $gray;
+$footer-text-color: #fff;
 
 /* Year 1 Fonts */
-$default-font: $ubuntu-medium;
+$header-font: $ubuntu;
+$body-font: $open-sans;
 $normal: 400;
 $bold: 700;
 

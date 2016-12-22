@@ -405,7 +405,10 @@ template {
 /* Import Google Fonts */
 @font-face {
   font-family: 'Ubuntu';
-  src: url("fonts/Ubuntu/Ubuntu-Medium.ttf"); }
+  src: url("fonts/Ubuntu"); }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/Open_Sans"); }
 /* Year 1 Game Colors */
 /* Year 1 Fonts */
 /* Gutters */
@@ -423,6 +426,18 @@ html {
 body {
   font-size: 1em; }
 
+/*----- FOOTER -----*/
+footer {
+  clear: both;
+  font-size: .5em;
+  text-align: center;
+  padding: 2em 0 .6em 0;
+  color: #333;
+  font-weight: 400; }
+  footer a {
+    color: #fff; }
+
+/* end of footer */
 /* End Query */
 /* End Query */
 * {
@@ -464,6 +479,20 @@ body {
 
 .font-import-test-delete {
   font-size: 2em;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400; }
+
+footer {
+  clear: both;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding: 2em 0 .6em 0;
+  color: #333;
+  font-weight: 400; }
+  footer a {
+    color: #fff; }
+
+/* end of footer */
 
 /*# sourceMappingURL=styles.css.map */

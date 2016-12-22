@@ -16,3 +16,17 @@ html {
 body {
   font-size: 1em;
 }
+
+/*----- FOOTER -----*/
+
+footer {
+  clear: both;
+  font-size: .5em;
+  text-align: center;
+  padding: 2em 0 .6em 0;
+  color: $footer-color;
+  font-weight: $normal;
+  a {
+    color: $footer-text-color;
+  }
+} /* end of footer */
