@@ -402,6 +402,13 @@ template {
 [hidden] {
   display: none; }
 
+/* Import Google Fonts */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("fonts/Ubuntu/Ubuntu-Medium.ttf"); }
+/* Year 1 Game Colors */
+/* Year 1 Fonts */
+/* Gutters */
 /* Prevents iPhone for resizing text in landsacpe mode */
 html {
   -webkit-text-size-adjust: none; }
@@ -445,13 +452,18 @@ body {
   display: flex;
   width: 5em;
   height: 5em;
-  background-color: blue;
+  background-color: #000049;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 2em; }
 
 .maths-game-number {
-  color: white; }
+  color: white;
+  font-family: "Ubuntu", sans-serif; }
+
+.font-import-test-delete {
+  font-size: 2em;
+  font-family: "Ubuntu", sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */

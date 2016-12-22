@@ -1,0 +1,27 @@
+/* Import Google Fonts */
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('fonts/Ubuntu/Ubuntu-Medium.ttf');
+}
+
+$ubuntu-medium: 'Ubuntu', sans-serif;
+
+/* Year 1 Game Colors */
+
+$orange: #467645;
+$blue: #000049;
+$gray: #333;
+
+$nav-color: $orange;
+$number-color: #fff;
+$number-box-color: $blue;
+
+/* Year 1 Fonts */
+$default-font: $ubuntu-medium;
+$normal: 400;
+$bold: 700;
+
+/* Gutters */
+$thin-gutter: 1%;
+$main-gutter: 2%;

@@ -1,45 +1,8 @@
 @import "normalize";
+@import "variables";
 @import "phone-default";
 @import "tablet";
 @import "desktop";
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
-.maths-game-main-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center
-}
 
-.maths-game-number-box-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10em 4em 0 4em;
-}
-
-.maths-game-nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 7em;
-  background-color: grey;
-  margin-bottom: 30px;
-}
-
-.maths-game-number-box {
-  display: flex;
-  width: 5em;
-  height: 5em;
-  background-color: blue;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
-}
-.maths-game-number {
-  color: white;
-}
