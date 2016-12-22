@@ -6,45 +6,54 @@
   <meta name='viewport' content='width=divice-width, initial-scale=1, maximum-scale=1'>
   <title>Year One Maths Game</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src='js/drag.js'></script>
 </head>
 <body>
-  <div class="maths-game-main-wrapper">
+  <header>
     <div class="maths-game-nav">
-    </div>
-    <div class="maths-game-number-box-container">
-      <div class="maths-game-number-box">
-        <p class="maths-game-number">1</p>
-      </div>
-      <div class="maths-game-number-box">
-        <p class="maths-game-number">2</p>
-      </div>
-      <div class="maths-game-number-box">
-        <p class="maths-game-number">3</p>
-      </div>
-    </div> <!-- END CONTAINER -->
-    <div class="maths-game-number-box-container">
-      <div class="maths-game-number-box">
-        <p class="maths-game-number">4</p>
-      </div>
-      <div class="maths-game-number-box">
-        <p class="maths-game-number">5</p>
-      </div>
-      <div class="maths-game-number-box">
-        <p class="maths-game-number">6</p>
-      </div>
-    </div> <!-- END CONTAINER -->
-    <div class="maths-game-number-box-container">
-      <div class="maths-game-number-box">
-        <p class="maths-game-number">7</p>
-      </div>
-      <div class="maths-game-number-box">
-        <p class="maths-game-number">8</p>
-      </div>
-      <div class="maths-game-number-box">
-        <p class="maths-game-number">9</p>
-      </div>
-    </div> <!-- END CONTAINER -->
-  </div>
+    </div> <!-- END OF NAV -->
+  </header> <!-- END OF HEADER -->
+  <div class="maths-game-main-wrapper">
+    <div class="maths-game-row">
+      <div class="maths-game-column width12">
+        <div class="maths-game-game-wrapper">
+          <div class="maths-game-number-box-container">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"  class="maths-game-number-box">
+              <p class="maths-game-number">1</p>
+            </div>
+            <div class="maths-game-number-box">
+              <p class="maths-game-number">2</p>
+            </div>
+            <div id="drag1" draggable="true" ondragstart="drag(event)" class="maths-game-number-box">
+              <p class="maths-game-number">3</p>
+            </div>
+          </div> <!-- END CONTAINER -->
+          <div class="maths-game-number-box-container">
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" class="maths-game-number-box">
+              <p class="maths-game-number">4</p>
+            </div>
+            <div class="maths-game-number-box">
+              <p class="maths-game-number">5</p>
+            </div>
+            <div class="maths-game-number-box">
+              <p class="maths-game-number">6</p>
+            </div>
+          </div> <!-- END CONTAINER -->
+          <div class="maths-game-number-box-container">
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" class="maths-game-number-box">
+              <p class="maths-game-number">7</p>
+            </div>
+            <div class="maths-game-number-box">
+              <p class="maths-game-number">8</p>
+            </div>
+            <div class="maths-game-number-box">
+              <p class="maths-game-number">9</p>
+            </div>
+          </div> <!-- END CONTAINER -->
+        </div> <!-- END MATHS GAME WRAPPER --> 
+      </div> <!-- END COLUMN -->
+    </div> <!-- END ROW -->
+  </div> <!-- END MAIN WRAPPER -->
 
   <footer>
     <p>Copyright &copy; 2016 &bull; Eduku.org &bull; A Cinderhouse Case Study</p>
