@@ -444,8 +444,13 @@ footer {
   margin: 0;
   padding: 0; }
 
+.maths-game-row {
+  margin-bottom: 14em; }
+
+.width-12 {
+  width: 100%; }
+
 .maths-game-game-wrapper {
-  position: relative;
   display: flex;
   justify-content: center; }
 
@@ -464,23 +469,38 @@ footer {
   margin-bottom: 30px; }
 
 .maths-game-number-box {
+  float: left;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 5em;
   height: 5em;
-  background-color: #000049;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2em; }
+  background-color: #000049; }
 
 .maths-game-number {
   color: white;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2em; }
+
+.maths-game-empty-box {
+  float: left;
+  width: 6em;
+  height: 6em;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .5em; }
 
 .font-import-test-delete {
   font-size: 2em;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400; }
+
+.maths-game-question-container {
+  margin: 0 auto;
+  background-color: blue;
+  width: 25%; }
 
 footer {
   clear: both;

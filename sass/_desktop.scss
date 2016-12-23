@@ -12,7 +12,7 @@
 }
 
 .maths-game-row {
-
+  margin-bottom: 14em;
 }
 
 .maths-game-column {
@@ -20,11 +20,14 @@
 }
 
 .width-12 {
-
+  width: 100%;
 }
 
+/////////////////////////////////
+////////// MAIN LAYOUT //////////
+/////////////////////////////////
+
 .maths-game-game-wrapper {
-  position: relative;
   display: flex;
   justify-content: center
 }
@@ -46,24 +49,46 @@
 }
 
 .maths-game-number-box {
+  float: left;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 5em;
   height: 5em;
   background-color: $number-box-color;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
+
 }
 .maths-game-number {
   color: white;
   font-family: $header-font;
+  font-size: 2em;
+}
+
+/////////////////////////////
+////////// ANSWERS //////////
+/////////////////////////////      
+
+.maths-game-empty-box {
+  float: left;
+  width: 6em;
+  height: 6em;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .5em; 
 }
 
 .font-import-test-delete {
   font-size: 2em;
   font-family: $header-font;
   font-weight: $normal;
+}
+
+.maths-game-question-container {
+  margin: 0 auto;
+  background-color: blue;
+  width: 25%;
 }
 
 footer {
