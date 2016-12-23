@@ -18,35 +18,35 @@
       <div class="maths-game-column width12">
         <div class="maths-game-game-wrapper">
           <div class="maths-game-number-box-container">
-            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"  class="maths-game-number-box">
+            <div id="1" draggable="true" ondragstart="drag(event)" class="maths-game-number-box">
               <p class="maths-game-number">1</p>
             </div>
-            <div class="maths-game-number-box">
+            <div id="2" draggable="true" ondragstart="drag(event)" class="maths-game-number-box">
               <p class="maths-game-number">2</p>
             </div>
-            <div id="drag1" draggable="true" ondragstart="drag(event)" class="maths-game-number-box">
+            <div id="3" draggable="true" ondragstart="drag(event)" class="maths-game-number-box">
               <p class="maths-game-number">3</p>
             </div>
           </div> <!-- END CONTAINER -->
           <div class="maths-game-number-box-container">
-            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" class="maths-game-number-box">
+            <div id="4" draggable="true" ondragstart="drag(event)" class="maths-game-number-box">
               <p class="maths-game-number">4</p>
             </div>
-            <div class="maths-game-number-box">
+            <div id="5" draggable="true" ondragstart="drag(event)" class="maths-game-number-box">
               <p class="maths-game-number">5</p>
             </div>
-            <div class="maths-game-number-box">
+            <div id="6" draggable="true" ondragstart="drag(event)" class="maths-game-number-box">
               <p class="maths-game-number">6</p>
             </div>
           </div> <!-- END CONTAINER -->
           <div class="maths-game-number-box-container">
-            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" class="maths-game-number-box">
+            <div id="7" draggable="true" ondragstart="drag(event)" class="maths-game-number-box">
               <p class="maths-game-number">7</p>
             </div>
-            <div class="maths-game-number-box">
+            <div id="8" draggable="true" ondragstart="drag(event)" class="maths-game-number-box">
               <p class="maths-game-number">8</p>
             </div>
-            <div class="maths-game-number-box">
+            <div id="9" draggable="true" ondragstart="drag(event)" class="maths-game-number-box">
               <p class="maths-game-number">9</p>
             </div>
           </div> <!-- END CONTAINER -->
@@ -54,59 +54,66 @@
       </div> <!-- END COLUMN -->
     </div> <!-- END ROW -->
 
-    <div class="maths-game-row">
-      <div class="maths-game-question-container">
-        <div class="maths-game-empty-box">
-          <div class="maths-game-number-box">
-            <p class="maths-game-number">8</p>
-          </div> 
-        </div> <!-- END EMPTY -->
-        <div class="maths-game-empty-box">
-          <div class="maths-game-number-box">
-            <p class="maths-game-number">+</p>
-          </div>  
-        </div><!-- END EMPTY -->
-        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" class="maths-game-empty-box">
-             
-        </div><!-- END EMPTY -->
-        <div class="maths-game-empty-box">
-          <div class="maths-game-number-box">
-            <p class="maths-game-number">=</p>
-          </div>
-        </div><!-- END EMPTY -->
-        <div class="maths-game-empty-box">
-          <div class="maths-game-number-box">
-            <p class="maths-game-number">17</p>
-          </div>
-        </div><!-- END EMPTY -->
-      </div> <!-- END QUESTION CONTAINER -->
+
+
+    <div class="maths-game-row center-in-row">
+      <div class="maths-game-empty-box">
+        <div class="maths-game-number-box">
+          <p class="maths-game-number">8</p>
+        </div> 
+      </div> <!-- END EMPTY -->
+
+      <div class="maths-game-empty-box">
+        <div class="maths-game-number-box">
+          <p class="maths-game-number">+</p>
+        </div>  
+      </div><!-- END EMPTY -->
+
+      <div id="ans9" ondrop="drop(event)" ondragover="allowDrop(event)" class="maths-game-empty-box">
+           
+      </div><!-- END EMPTY -->
+
+      <div class="maths-game-empty-box">
+        <div class="maths-game-number-box">
+          <p class="maths-game-number">=</p>
+        </div>
+      </div><!-- END EMPTY -->
+
+      <div class="maths-game-empty-box">
+        <div class="maths-game-number-box">
+          <p class="maths-game-number">17</p>
+        </div>
+      </div><!-- END EMPTY -->
     </div> <!-- END ROW -->
 
-    <div class="maths-game-row">
+    <div class="maths-game-row center-in-row">
+      <div class="maths-game-empty-box">
+        <div class="maths-game-number-box">
+          <p class="maths-game-number">9</p>
+        </div> 
+      </div> <!-- END EMPTY -->
 
-        <div class="maths-game-empty-box">
-          <div class="maths-game-number-box">
-            <p class="maths-game-number">8</p>
-          </div> 
-        </div> <!-- END EMPTY -->
-        <div class="maths-game-empty-box">
-          <div class="maths-game-number-box">
-            <p class="maths-game-number">+</p>
-          </div>  
-        </div><!-- END EMPTY -->
-        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" class="maths-game-empty-box">
-             
-        </div><!-- END EMPTY -->
-        <div class="maths-game-empty-box">
-          <div class="maths-game-number-box">
-            <p class="maths-game-number">=</p>
-          </div>
-        </div><!-- END EMPTY -->
-        <div class="maths-game-empty-box">
-          <div class="maths-game-number-box">
-            <p class="maths-game-number">17</p>
-          </div>
-        </div><!-- END EMPTY -->
+      <div class="maths-game-empty-box">
+        <div class="maths-game-number-box">
+          <p class="maths-game-number">+</p>
+        </div>  
+      </div><!-- END EMPTY -->
+
+      <div id="ans2" ondrop="drop(event)" ondragover="allowDrop(event)" class="maths-game-empty-box">
+           
+      </div><!-- END EMPTY -->
+
+      <div class="maths-game-empty-box">
+        <div class="maths-game-number-box">
+          <p class="maths-game-number">=</p>
+        </div>
+      </div><!-- END EMPTY -->
+
+      <div class="maths-game-empty-box">
+        <div class="maths-game-number-box">
+          <p class="maths-game-number">11</p>
+        </div>
+      </div><!-- END EMPTY -->
     </div> <!-- END ROW -->
 
   </div> <!-- END MAIN WRAPPER -->

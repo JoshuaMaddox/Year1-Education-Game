@@ -11,8 +11,13 @@
 
 }
 
+.center-in-row {
+  display: flex;
+  justify-content: center;
+}
+
 .maths-game-row {
-  margin-bottom: 14em;
+  margin-bottom: 2em;
 }
 
 .maths-game-column {

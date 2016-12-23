@@ -444,8 +444,12 @@ footer {
   margin: 0;
   padding: 0; }
 
+.center-in-row {
+  display: flex;
+  justify-content: center; }
+
 .maths-game-row {
-  margin-bottom: 14em; }
+  margin-bottom: 2em; }
 
 .width-12 {
   width: 100%; }

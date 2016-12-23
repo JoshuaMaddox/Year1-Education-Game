@@ -3,15 +3,19 @@ function allowDrop(ev) {
   console.log('Allow Drop Was Fired')
 }
 
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-  console.log('drag has started')
+function drag(e) {
+  e.currentTarget.style.backgroundColor = "purple";
+  e.dataTransfer.setData("text", e.target.id);
 }
 
 function drop(ev) {
   ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  console.log("i am data: ", data)
+  let correctAnswer = ev.target.id[3];
+  let data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
-  console.log('drop has been fired')
+  if(correctAnswer === data) {
+    alert('Correct Answer')
+  } else {
+    alert('Wrong Answer')
+  }
 }
