@@ -1,11 +1,23 @@
+let elemInfoObj = {}
+
 function allowDrop(ev) {
   ev.preventDefault();
-  console.log('Allow Drop Was Fired')
 }
 
 function drag(e) {
-  e.currentTarget.style.backgroundColor = "purple";
-  e.dataTransfer.setData("text", e.target.id);
+  //Get Element ID
+  let id = e.target.id;
+  //Get the elem being dragged & store in the elemInfoObj
+  elemInfoObj.elem = document.getElementById(id);
+  //Get Position Information of Element being dragged & store in the elemInfoObj
+  let pos = elemInfoObj.elem.getBoundingClientRect();
+  //Get x position information of Element being dragged & store in the elemInfoObj
+  elemInfoObj.x = pos.left;
+  //Get y position information of Element being dragged & store in the elemInfoObj
+  elemInfoObj.y = pos.top;
+  //Change the color of the element being dragged
+  elemInfoObj.elem.style.backgroundColor = "purple";
+  e.dataTransfer.setData("text", id);
 }
 
 function drop(ev) {
@@ -14,8 +26,9 @@ function drop(ev) {
   let data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
   if(correctAnswer === data) {
-    alert('Correct Answer')
+    console.log('Correct Answer');
   } else {
-    alert('Wrong Answer')
+    console.log(elemInfoObj.x, elemInfoObj.y);
+
   }
 }
