@@ -28,7 +28,11 @@ function drop(ev) {
   if(correctAnswer === data) {
     console.log('Correct Answer');
   } else {
-    console.log(elemInfoObj.x, elemInfoObj.y);
+    let id = elemInfoObj.elem.id
+    //Get the element previous to the dragged element's parent element and all Child nodes
+    let appendToThisElement = document.getElementById(id - 1).parentNode.children;
+    //Iterate over each child node and check id to see where to append child so that it 
+    //is in correct numerical order after being appended...write function below
 
   }
 }
